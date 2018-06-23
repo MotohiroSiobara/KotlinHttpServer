@@ -1,6 +1,6 @@
 package http.request
 
 /**
- * HttpRequestのRequestLineを表現したクラス
+ * HttpRequestのRequestLineを表現したdata class
  */
-class HttpRequestLine(val method: String, val path: String, private val version: String)
+data class HttpRequestLine(val method: String, val path: String, private val version: String)

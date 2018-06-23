@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter
 import java.time.format.DateTimeParseException
 
 object RFC1123DateTimeHandler {
-    private val GMT : ZoneId = ZoneId.of("GMT")
+    public val GMT : ZoneId = ZoneId.of("GMT")
     private val RFC_1123_FORMATTER : DateTimeFormatter = DateTimeFormatter.RFC_1123_DATE_TIME
 
     fun nowDateTimeStr() : String {
