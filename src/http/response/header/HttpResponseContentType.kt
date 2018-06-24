@@ -1,6 +1,7 @@
 package http.response.header
 
-import http.response.HttpResponse
+import util.FileHandler
+import java.io.File
 
 enum class HttpResponseContentType(val contentType : String, val extensions : List<String>) {
 
@@ -10,13 +11,18 @@ enum class HttpResponseContentType(val contentType : String, val extensions : Li
     JPEG("image/jpeg", listOf(".jpeg", ".jpg")),
     PNG("image/png", listOf(".png")),
     GIF("image/gif", listOf(".gif")),
-    PDF("application/pdf", listOf(".pdf"))
+    PDF("application/pdf", listOf(".pdf"));
 
     fun getString(): String {
         return "Content-Type: " + contentType
     }
 
-    fun getContentType(File file) : HttpResponseContentType? {
-        val fileExtension : String = FileHandler.getExtension(file)
+    /**
+     *  @param file File コンテントタイプを判定したいファイルを渡す
+     *  @return {@code file}のコンテントタイプをもったクラス
+     */
+    fun lookupContentType(file : File) : HttpResponseContentType? {
+        val fileExtension : String = FileHandler.lookupExtension(file)
+        return HttpResponseContentType.values().find { it.extensions.contains(fileExtension) }
     }
 }

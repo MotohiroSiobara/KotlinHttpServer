@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc6cc7dc-2474-4293-9dc2-739f0e2aedd3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/http/response/HttpResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/FileHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/http/response/body/HttpResponseBody.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/request/HttpRequestLine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/request/HttpRequestLine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http/response/HttpResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/response/HttpResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,15 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NotImplementedException.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/http/exception/NotImplementedException.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HttpRequestLine.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/http/request/HttpRequestLine.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,8 +42,8 @@
       <file leaf-file-name="RFC1123DateTimeHandler.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/RFC1123DateTimeHandler.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
                 <element signature="e#14#188#0" expanded="true" />
               </folding>
@@ -61,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpResponse.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HttpResponse.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/http/response/HttpResponse.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="e#23#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpResponseBody.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/http/response/body/HttpResponseBody.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -73,8 +75,11 @@
       <file leaf-file-name="HttpResponseHeader.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="315">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="e#30#114#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,19 +87,22 @@
       <file leaf-file-name="HttpResponseContentType.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="300">
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding>
+                <element signature="e#31#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileHandler.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileHandler.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/FileHandler.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="757">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
-                <element signature="e#14#276#0" expanded="true" />
+                <element signature="e#14#332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,13 +165,14 @@
         <option value="$PROJECT_DIR$/src/http/exception/NotImplementedException.kt" />
         <option value="$PROJECT_DIR$/src/constants/EscapeSequenceConstants.kt" />
         <option value="$PROJECT_DIR$/src/http/request/HttpRequestFactory.kt" />
-        <option value="$PROJECT_DIR$/src/util/RFC1123DateTimeHandler.kt" />
-        <option value="$PROJECT_DIR$/src/http/response/HttpResponse.kt" />
-        <option value="$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt" />
         <option value="$PROJECT_DIR$/src/http/request/HttpRequest.kt" />
         <option value="$PROJECT_DIR$/src/http/request/HttpRequestLine.kt" />
-        <option value="$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt" />
+        <option value="$PROJECT_DIR$/src/util/RFC1123DateTimeHandler.kt" />
         <option value="$PROJECT_DIR$/src/util/FileHandler.kt" />
+        <option value="$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt" />
+        <option value="$PROJECT_DIR$/src/http/response/body/HttpResponseBody.kt" />
+        <option value="$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt" />
+        <option value="$PROJECT_DIR$/src/http/response/HttpResponse.kt" />
       </list>
     </option>
   </component>
@@ -177,9 +186,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-958" />
+    <option name="x" value="-974" />
     <option name="y" value="-180" />
-    <option name="width" value="958" />
+    <option name="width" value="974" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -225,6 +234,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
               <item name="response" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KotlinHttpServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinHttpServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="body" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KotlinHttpServer" type="b2602c69:ProjectViewProjectNode" />
@@ -329,12 +346,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529759464525</updated>
       <workItem from="1529759466287" duration="18000" />
-      <workItem from="1529759507393" duration="4637000" />
+      <workItem from="1529759507393" duration="7461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4655000" />
+    <option name="totallyTimeSpent" value="7479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-974" y="-180" width="974" height="1080" extended-state="6" />
@@ -350,7 +367,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32976654" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32976654" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21868584" />
@@ -368,6 +385,35 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21868584" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32976654" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -418,23 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/RFC1123DateTimeHandler.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/http/request/HttpRequest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -459,26 +488,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/http/response/HttpResponse.kt">
+    <entry file="file://$PROJECT_DIR$/src/util/RFC1123DateTimeHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#14#188#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/FileHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        <state relative-caret-position="757">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
-            <element signature="e#14#276#0" expanded="true" />
+            <element signature="e#14#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseContentType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="e#31#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/http/response/body/HttpResponseBody.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/http/response/header/HttpResponseHeader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/http/response/HttpResponse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#23#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
