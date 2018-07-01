@@ -16,13 +16,13 @@ enum class HttpResponseContentType(val contentType : String, val extensions : Li
     fun getString(): String {
         return "Content-Type: " + contentType
     }
+}
 
-    /**
-     *  @param file File コンテントタイプを判定したいファイルを渡す
-     *  @return {@code file}のコンテントタイプをもったクラス
-     */
-    fun lookupContentType(file : File) : HttpResponseContentType? {
-        val fileExtension : String = FileHandler.lookupExtension(file)
-        return HttpResponseContentType.values().find { it.extensions.contains(fileExtension) }
-    }
+/**
+ *  @param file File コンテントタイプを判定したいファイルを渡す
+ *  @return {@code file}のコンテントタイプをもったクラス
+ */
+fun lookupContentType(file : File) : HttpResponseContentType? {
+    val fileExtension : String = FileHandler.lookupExtension(file)
+    return HttpResponseContentType.values().find { it.extensions.contains(fileExtension) }
 }
